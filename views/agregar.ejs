@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+         body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Caveat', cursive;
+            background-image: url(https://img.freepik.com/foto-gratis/vista-papel-arrugado-blanco_1194-7544.jpg?w=2000);
+        }
+        .nav {
+            background: linear-gradient(#4B0082);
+            height: 6rem;
+            position: relative;
+            text-align: center;
+        }
+        .nav h1 {
+            margin: 0;
+            position: relative;
+            top: 30%;
+            font-size: 6rem;
+        }
+        section {
+            padding: 2rem;
+            font-size: 2rem;
+        }
+        section .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        section .container .agregar,
+        section .container .cancion {
+            display: inline-block;
+            margin-left: 30px;
+            margin-top: 30px;
+            width: max-content;
+            height: max-content;
+            border: 2px #000000 solid;
+        }
+    </style>
+    <title>Agregar cancion</title>
+</head>
+<body>
+    <nav class="nav">
+        <h1>Playlist</h1>
+    </nav>
+    <section>
+    <h1>Agregar Cancion</h1>
+    <form action="agregar-cancion" method="POST">
+        <label for="nombre">Nombre de la cancion:</label>
+        <input type="text" class="nombre" id="nombre" name="nombre">
+        <div>
+            <input type="submit" class="submit" value="Agregar">
+        </div>
+        <div>
+            <a href="/">
+                Regresar
+            </a>
+        </div>
+    </form>
+    </section>
+</body>
+</html>
